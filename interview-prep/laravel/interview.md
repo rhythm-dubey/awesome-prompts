@@ -258,3 +258,248 @@ simple architecture diagram:
 uUsers -> CDN -> Load Balancer -> Laravel App Servers -> Redis (Cache + Queue) -> Database (Primary + Read Replicas)
 hy This impresses interviewers: 
 hThis answer shows understanding of backend architecture,pPerformance engineering,and infrastructure thinking.Even without managing 1M users,this scaling strategies explanation suffices.
+
+---
+
+# Question 12 — PHP Fundamentals (OOP, SOLID, Design Patterns)
+
+**Explain the following PHP concepts and how you use them in Laravel:**
+
+1️⃣ Object-Oriented Programming (OOP) principles
+2️⃣ SOLID principles
+3️⃣ Common design patterns you've used in Laravel projects
+
+## Answer 12
+
+**OOP Principles:**
+- **Encapsulation:** Wrapping data and methods within a class to protect data integrity. In Laravel, models encapsulate database operations.
+- **Inheritance:** Creating new classes from existing ones. Laravel's Eloquent models inherit from base Model class.
+- **Polymorphism:** Ability to process objects differently based on their type. Used in Laravel when different notification channels implement the same interface.
+- **Abstraction:** Hiding complex implementation details. Laravel facades provide simple interfaces to complex services.
+
+**SOLID Principles:**
+- **Single Responsibility:** Each class should have one reason to change. In Laravel, controllers should only handle HTTP requests, not business logic.
+- **Open-Closed:** Classes should be open for extension but closed for modification. Laravel's service container allows extending without modifying core classes.
+- **Liskov Substitution:** Subtypes should be substitutable for their base types. Ensures proper inheritance in custom classes.
+- **Interface Segregation:** Clients shouldn't depend on interfaces they don't use. Laravel's contracts provide focused interfaces.
+- **Dependency Inversion:** Depend on abstractions, not concretions. Laravel's IoC container helps achieve this.
+
+**Design Patterns in Laravel:**
+- **Repository Pattern:** Used for data access layer abstraction
+- **Factory Pattern:** Used in Laravel's service providers for object creation
+- **Observer Pattern:** Laravel's events and listeners
+- **Strategy Pattern:** Different queue drivers (database, Redis, SQS)
+- **Decorator Pattern:** Laravel's middleware system
+
+---
+
+# Question 13 — REST API Design
+
+**Design a REST API for a Blog Management System with the following endpoints:**
+
+1️⃣ List all posts
+2️⃣ Create a new post
+3️⃣ Update an existing post
+4️⃣ Delete a post
+5️⃣ Get post with comments
+
+**Explain:**
+- HTTP methods and status codes you'll use
+- Authentication approach
+- Error handling
+- API versioning strategy
+
+## Answer 13
+
+**API Endpoints:**
+- `GET /api/v1/posts` - List all posts (with pagination, filtering)
+- `POST /api/v1/posts` - Create new post
+- `GET /api/v1/posts/{id}` - Get single post
+- `PUT /api/v1/posts/{id}` - Update post
+- `DELETE /api/v1/posts/{id}` - Delete post
+- `GET /api/v1/posts/{id}/comments` - Get post comments
+
+**HTTP Methods & Status Codes:**
+- `GET` - 200 (OK), 404 (Not Found)
+- `POST` - 201 (Created), 400 (Bad Request), 422 (Validation Error)
+- `PUT` - 200 (OK), 404 (Not Found), 422 (Validation Error)
+- `DELETE` - 204 (No Content), 404 (Not Found)
+
+**Authentication:**
+- Use Laravel Sanctum for API token authentication
+- Include Bearer token in Authorization header
+- Rate limiting to prevent abuse
+
+**Error Handling:**
+- Consistent JSON error responses with error codes and messages
+- Use Laravel's validation with custom error messages
+- Log errors for debugging while returning user-friendly messages
+
+**API Versioning:**
+- URL versioning: `/api/v1/posts`
+- Accept header versioning as fallback
+- Maintain backward compatibility when possible
+
+---
+
+# Question 14 — Authentication & Authorization
+
+**Explain different authentication methods in Laravel and when to use each:**
+
+1️⃣ Laravel Sanctum
+2️⃣ Laravel Passport
+3️⃣ Laravel Jetstream
+4️⃣ Custom authentication
+
+**Also explain the difference between authentication and authorization.**
+
+## Answer 14
+
+**Authentication vs Authorization:**
+- **Authentication:** Verifying who the user is (login process)
+- **Authorization:** Determining what the authenticated user can do (permissions)
+
+**Laravel Authentication Methods:**
+
+**Laravel Sanctum:**
+- Best for SPAs and mobile apps
+- Issues API tokens for authentication
+- Simple token-based authentication
+- No OAuth complexity
+
+**Laravel Passport:**
+- Full OAuth2 server implementation
+- Best for third-party API access
+- Supports authorization codes, implicit grants
+- More complex setup but powerful
+
+**Laravel Jetstream:**
+- Provides pre-built authentication UI
+- Includes login, registration, password reset
+- Uses Sanctum under the hood
+- Best for traditional web applications
+
+**Custom Authentication:**
+- When you need specific business logic
+- Extending Laravel's built-in guards
+- Custom user providers for external systems
+
+---
+
+# Question 15 — Third-Party API Integrations
+
+**You mentioned integrating Stripe payments. Explain:**
+
+1️⃣ How do you handle API rate limits?
+2️⃣ How do you manage API keys securely?
+3️⃣ How do you handle API failures and retries?
+4️⃣ How do you test third-party integrations?
+
+## Answer 15
+
+**API Rate Limits:**
+- Use Laravel's throttling middleware
+- Implement exponential backoff for retries
+- Cache API responses when possible
+- Monitor API usage with logging
+
+**API Keys Security:**
+- Store keys in environment variables (.env)
+- Use Laravel's config system
+- Never commit keys to version control
+- Use different keys for staging/production
+- Rotate keys periodically
+
+**API Failures & Retries:**
+- Use try-catch blocks for API calls
+- Implement retry logic with exponential backoff
+- Queue failed requests for later retry
+- Notify developers of persistent failures
+- Have fallback mechanisms
+
+**Testing Integrations:**
+- Use Laravel's HTTP fake for testing
+- Mock external APIs in feature tests
+- Test error scenarios and edge cases
+- Use staging environments with test API keys
+- Monitor integration health in production
+
+---
+
+# Question 16 — MySQL Optimization
+
+**Explain MySQL optimization techniques you've used in Laravel projects:**
+
+1️⃣ Indexing strategies
+2️⃣ Query optimization
+3️⃣ Database schema design
+4️⃣ Connection pooling
+
+## Answer 16
+
+**Indexing Strategies:**
+- Add indexes on WHERE, JOIN, and ORDER BY columns
+- Use composite indexes for multiple conditions
+- Avoid over-indexing (increases write time)
+- Use EXPLAIN to analyze query execution plans
+
+**Query Optimization:**
+- Use SELECT only needed columns
+- Avoid SELECT * in production
+- Use UNION instead of OR when possible
+- Optimize subqueries to JOINs
+- Use query result caching
+
+**Database Schema Design:**
+- Normalize data to reduce redundancy
+- Use appropriate data types (INT vs VARCHAR)
+- Design for read vs write patterns
+- Use foreign keys for data integrity
+- Consider partitioning for large tables
+
+**Connection Pooling:**
+- Use persistent connections when possible
+- Configure appropriate connection limits
+- Monitor connection usage
+- Use read replicas for SELECT queries
+
+---
+
+# Question 17 — Git Workflow
+
+**Explain your Git workflow for Laravel development:**
+
+1️⃣ Branching strategy
+2️⃣ Code review process
+3️⃣ Handling merge conflicts
+4️⃣ Deployment workflow
+
+## Answer 17
+
+**Branching Strategy:**
+- `main/master` for production code
+- `develop` for integration branch
+- Feature branches: `feature/user-authentication`
+- Hotfix branches: `hotfix/payment-bug`
+- Release branches: `release/v1.2.0`
+
+**Code Review Process:**
+- Create pull requests for all changes
+- Require at least one approval
+- Use GitHub/GitLab for code reviews
+- Automated tests must pass
+- Code style checks (PHP CS Fixer, Laravel Pint)
+
+**Merge Conflicts:**
+- Pull latest changes before pushing
+- Use `git rebase` for clean history
+- Resolve conflicts carefully
+- Test after resolving conflicts
+- Communicate with team about major conflicts
+
+**Deployment Workflow:**
+- Merge to main after approval
+- Use CI/CD pipelines (GitHub Actions, GitLab CI)
+- Automated testing and deployment
+- Database migrations run automatically
+- Rollback strategy for failed deployments
