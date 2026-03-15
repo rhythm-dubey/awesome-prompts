@@ -22,19 +22,45 @@ The materials are structured to simulate real interview scenarios and provide co
 ```
 awesome-prompts/
 ├── README.md
+├── PROMPTS_INDEX.md
 ├── interview-prep/
-│   ├── hr-interview.md          # HR interview questions and answers
-│   └── laravel-interview.md     # Technical Laravel interview Q&A
-└── prompts/
-    └── interview/
-        └── screening-round.md   # AI screening interview prompt
+│   ├── general/
+│   │   └── hr-interview.md
+│   ├── laravel/
+│   │   ├── interview.md
+│   │   ├── screening-qna.md
+│   │   ├── core-concepts-qna.md
+│   │   └── senior-qna.md
+│   └── company/
+│       ├── square/
+│       │   ├── preparation-guide.md
+│       │   ├── guide-summary.md
+│       │   └── guide-round2.md … guide-round8.md
+│       └── dotsquare/
+│           └── interview-formatted.md
+├── prompts/
+│   ├── general/interview/
+│   │   ├── screening-round.md
+│   │   ├── second-round.md
+│   │   └── rate-limiter.md
+│   ├── node/learning/
+│   │   └── learn.md
+│   ├── laravel/tools/
+│   │   └── qna-generator.md
+│   ├── vue/interview/
+│   │   └── interview.md
+│   └── company/dotsquare/
+│       └── interview.md
+└── templates/
+    └── messages/
+        └── whatsapp-message.md
 ```
 
 ### Content Overview
 
 - **interview-prep/**: Practical interview preparation materials
-  - `hr-interview.md`: Common HR interview questions with sample answers
-  - `laravel-interview.md`: Technical Laravel/PHP interview questions covering:
+  - **general/** — `hr-interview.md`: Common HR interview questions with sample answers
+  - **laravel/** — Technical Laravel/PHP interview Q&A: `interview.md`, `screening-qna.md`, `core-concepts-qna.md`, `senior-qna.md` covering:
     - Introduction and experience
     - RBAC (Role-Based Access Control) systems
     - Database optimization and N+1 queries
@@ -50,9 +76,15 @@ awesome-prompts/
     - Third-party API integrations
     - MySQL optimization
     - Git workflow
+  - **company/square/** — Company-specific Laravel interview guides (preparation-guide, guide-summary, guide-round2…round8)
+  - **company/dotsquare/** — `interview-formatted.md`: DotSquare Laravel interview Q&A
 
-- **prompts/**: Reusable prompts for various scenarios
-  - `interview/screening-round.md`: Complete prompt for AI-powered screening interviews
+- **prompts/**: Reusable prompts grouped by technology or general, then purpose
+  - **general/interview/** — `screening-round.md`, `second-round.md`, `rate-limiter.md`
+  - **node/learning/** — `learn.md`: Node.js learning prompt
+  - **laravel/tools/** — `qna-generator.md`: Laravel Q&A generator
+  - **vue/interview/** — `interview.md`: Vue.js interview prompt
+  - **company/dotsquare/** — `interview.md`: DotSquare company-specific prompt
 
 ## 🚀 Interview Preparation
 
@@ -96,7 +128,7 @@ The Laravel interview preparation covers:
 
 1. **Review the materials** in `interview-prep/` before your interview
 2. **Practice explaining concepts** in your own words
-3. **Use the screening-round.md** prompt to simulate AI interviews
+3. **Use the prompts/general/interview/screening-round.md** prompt to simulate AI interviews
 4. **Focus on understanding** rather than memorizing answers
 
 ### For Interviewers
