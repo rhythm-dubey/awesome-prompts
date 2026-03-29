@@ -48,12 +48,12 @@ Quick reference for the repository layout and current content.
 - `interview-prep/laravel/core-concepts-qna.md` - Laravel core concepts Q&A
 - `interview-prep/laravel/senior-qna.md` - Laravel senior-level Q&A
 - `interview-prep/company/dotsquare/interview-formatted.md` - DotSquare formatted interview prep
-- `interview-prep/company/square/preparation-guide.md` - Square preparation guide
-- `interview-prep/company/square/guide-summary.md` - Square guide summary
-- `interview-prep/company/square/guide-round2.md` - Square round 2 guide
-- `interview-prep/company/square/guide-round3.md` - Square round 3 guide
-- `interview-prep/company/square/guide-round4.md` - Square round 4 guide
-- `interview-prep/company/square/guide-round5.md` - Square round 5 guide
-- `interview-prep/company/square/guide-round6.md` - Square round 6 guide
-- `interview-prep/company/square/guide-round7.md` - Square round 7 guide
-- `interview-prep/company/square/guide-round8.md` - Square round 8 guide
+- `interview-prep/company/square/round-1-basic-php-and-laravel-fundamentals.md` - Square round 1 guide
+- `interview-prep/company/square/round-2-advanced-laravel-concepts.md` - Square round 2 guide
+- `interview-prep/company/square/round-3-api-design-and-backend-architecture.md` - Square round 3 guide
+- `interview-prep/company/square/round-4-database-and-query-optimization.md` - Square round 4 guide
+- `interview-prep/company/square/round-5-stripe-payment-integration.md` - Square round 5 guide
+- `interview-prep/company/square/round-6-aws-deployment-and-scaling.md` - Square round 6 guide
+- `interview-prep/company/square/round-7-system-design-and-real-world-scenarios.md` - Square round 7 guide
+- `interview-prep/company/square/round-8-debugging-and-problem-solving.md` - Square round 8 guide
+- `interview-prep/company/square/interview-rounds-quick-reference.md` - Square quick reference summary
