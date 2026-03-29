@@ -21,15 +21,15 @@ Quick reference for the repository layout and current content.
 
 - `prompts/general/interview/screening-round.md` - general screening interview prompt
 - `prompts/general/interview/second-round.md` - general second-round interview prompt
-- `prompts/general/interview/rate-limiter.md` - rate limiter prompt
-- `prompts/laravel/tools/qna-generator.md` - Laravel Q&A generator
-- `prompts/node/learning/learn.md` - Node.js learning prompt
-- `prompts/vue/interview/interview.md` - Vue interview prompt
+- `prompts/general/interview/laravel-rate-limiting-guide.md` - Laravel rate limiting guide
+- `prompts/laravel/tools/laravel-interview-qna-generator.md` - Laravel interview Q&A generator
+- `prompts/node/learning/nodejs-learning-roadmap.md` - Node.js learning roadmap
+- `prompts/vue/interview/laravel-vue-inertia-interview-guide.md` - Laravel Vue Inertia interview guide
 - `prompts/exams/rajasthan-basic-computer-instructor/prompt-01.md` - Rajasthan Basic Computer Instructor prompt
-- `prompts/company/dotsquare/interview.md` - DotSquare interview prompt
+- `prompts/company/dotsquare/multi-round-laravel-interview.md` - DotSquare multi-round Laravel interview prompt
 - `prompts/company/webtechno/project-analyzer.md` - WebTechno project analyzer prompt
-- `prompts/company/webtechno/fix-issues.md` - WebTechno issue-fix prompt
-- `prompts/company/webtechno/fix-issues-1.md` - WebTechno issue-fix variant
+- `prompts/company/webtechno/fix-filament-advanced-tables-trait-collision.md` - WebTechno Filament trait collision fix prompt
+- `prompts/company/webtechno/resolve-all-advanced-tables-trait-collisions.md` - WebTechno full AdvancedTables collision resolution prompt
 - `prompts/company/webtechno/fix-duplicate-relation-in-property.md` - WebTechno duplicate relation fix prompt
 - `prompts/company/webtechno/saturio-migration-verification.md` - WebTechno migration verification prompt
 - `prompts/company/webtechno/saturio-migration-verification-v2.md` - WebTechno migration verification v2 prompt
@@ -43,7 +43,7 @@ Quick reference for the repository layout and current content.
 ## interview-prep/
 
 - `interview-prep/general/hr-interview.md` - HR interview questions and answers
-- `interview-prep/laravel/interview.md` - core Laravel interview Q&A
+- `interview-prep/laravel/laravel-interview-questions-and-answers.md` - core Laravel interview Q&A
 - `interview-prep/laravel/screening-qna.md` - Laravel screening Q&A
 - `interview-prep/laravel/core-concepts-qna.md` - Laravel core concepts Q&A
 - `interview-prep/laravel/senior-qna.md` - Laravel senior-level Q&A
