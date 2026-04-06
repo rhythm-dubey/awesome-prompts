@@ -1,4 +1,6 @@
-# 📚 Subject-wise Breakdown
+# Rajasthan BCI exam analysis research report
+
+## 📚 Subject-wise Breakdown
 
 The Rajasthan Basic Computer Instructor (BCI) exam has **two papers** (100 marks each). **Paper I** covers Rajasthan-specific and general topics, while **Paper II** focuses on professional computer science subjects. Key subjects and topics include:
 
@@ -18,7 +20,7 @@ The Rajasthan Basic Computer Instructor (BCI) exam has **two papers** (100 marks
 
 Each subject above contains multiple subtopics. In particular, **MOST IMPORTANT TOPICS** (high-frequency areas) are: **DBMS & SQL**, **Programming Fundamentals (C/C++/Java/Python)**, **Data Processing (MS Office)**, and **Computer Fundamentals**. These areas appear frequently and should be mastered first.
 
-# 📊 Topic-wise Weightage Analysis
+## 📊 Topic-wise Weightage Analysis
 
 Based on the 2022 exam analysis, different topics contribute varying numbers of questions. For example, Suraku Academy’s breakdown of Paper II (100 questions) shows【44†L169-L177】【44†L178-L183】:
 
@@ -44,20 +46,20 @@ Based on the 2022 exam analysis, different topics contribute varying numbers of 
 
 *Note:* Paper I (General Studies) has 100 questions split between Rajasthan GK and General Ability, typically about half each (details unpublished)【53†L862-L870】. Thus **Art & Culture/History/Geography** of Rajasthan and **Logical/Quantitative Ability** together fill Paper I.
 
-# 🔁 Question Pattern Analysis
+## 🔁 Question Pattern Analysis
 
 - **Question Type:** Both papers consist of **Multiple Choice Questions (MCQs)** only【53†L862-L870】. There are no descriptive or practical coding tasks. Each question carries 1 mark and wrong answers incur a 1/3 mark penalty【53†L862-L870】.  
 - **Knowledge vs. Concept:** The exam emphasizes **theoretical and conceptual** understanding rather than hands-on coding. Many questions test memory of facts (e.g. definitions, numbers, standards) or basic concepts (e.g. how a firewall works, properties of data structures). However, applied reasoning (e.g. logical puzzles, algorithm behavior) is also common.  
 - **Difficulty Level:** Historically the paper is a mix of **easy to medium** questions. Direct GK or routine facts (e.g. “largest memory unit?”) are easy, while logical reasoning or deeper conceptual questions (e.g. CPU scheduling, data structure operations) are moderate. Very few questions are extremely difficult since wide coverage is needed. In 2022, students reported the exam as broadly “moderate” in difficulty (Adda247/Testbook analysis).  
 - **Repeated Patterns:** Many topics recur year-to-year. For instance, standard topics like MS Office usage, basic C syntax, common algorithms (sorting/searching), and basic networking frequently appear. Rajasthan-specific facts (like capital cities, important personalities) also tend to repeat. Students should review past papers for such patterns.
 
-# 📈 Trend Analysis
+## 📈 Trend Analysis
 
 - **Increasing Importance:** Recent syllabi and analysis show growing emphasis on **modern technologies**. Topics like **Artificial Intelligence, Machine Learning, Python, Blockchain, IoT** have been added to the curriculum【49†L981-L990】【44†L169-L177】. Questions on **data security and web technologies** are becoming more common. For example, 2022 included 8 questions on IoT/web topics【44†L169-L177】, reflecting current tech trends.  
 - **Decreasing Emphasis:** Traditional hardware-centric topics appear less. For instance, digital electronics and circuit design (previously in Senior Computer Instructor) had almost no role in Basic Computer Instructor (only ~1 question【44†L178-L183】). Emphasis has shifted from pure hardware (TTL/CMOS logic) to software-driven topics.  
 - **Pattern Shifts:** The exam is gradually balancing between **rote learning** and **analytical questions**. Earlier years focused heavily on factual recall; newer patterns include more scenario-based reasoning (e.g. interpreting code snippets, solving numerical problems). However, GK of Rajasthan and elementary aptitude remain staples with consistent weight.
 
-# 🧠 Smart Preparation Strategy
+## 🧠 Smart Preparation Strategy
 
 - **Priority Ranking:** Based on weight and difficulty, rank topics as **High, Medium, Low** priority:  
   - *High:* **DBMS & SQL**, **Programming Fundamentals (C/C++/Java/Python)**, **MS Office/Data Processing**, **Computer Fundamentals/Number Systems**, **Data Structures & Algorithms**. These carry ~50% of questions【44†L169-L177】【44†L178-L183】.  
@@ -72,7 +74,7 @@ Based on the 2022 exam analysis, different topics contribute varying numbers of 
 - **Focused Techniques:** Use quality study materials that map exactly to the syllabus. Solve topic-wise MCQs in batches. For each subject, write concise notes of formulas/facts (for quick revision). Create flashcards for Rajasthan GK (important dates, culture facts) and practice them daily.  
 - **Highlight “MOST IMPORTANT TOPICS”:** In every study session, ensure you spend extra time on **DBMS, Programming (especially OOP/DSA)** and **MS Office tools**, as these consistently yield the most questions【44†L169-L177】. Reinforce these with plenty of practice questions. 
 
-# ⚔️ Competition Insight
+## ⚔️ Competition Insight
 
 - **Competitor Profile:** Many aspirants have prepared over the last 2–3 years for Rajasthan Computer Instructor roles. They likely have done standard courses and previous papers. To outperform them, focus on **depth and speed**.  
 - **Edge Topics:** Go beyond basic study guides. For example, competitors may memorize facts; you should also **understand concepts** (e.g. actually run a quick code example for sorting, or use Excel functions in practice). Specialized areas like **current developments in AI/ML or latest networking standards** can differentiate you – even if detailed questions don’t appear, conceptual questions might.  
@@ -80,7 +82,7 @@ Based on the 2022 exam analysis, different topics contribute varying numbers of 
 - **Practice Under Pressure:** Many candidates underestimate time management. Regular timed mock tests (full two papers) will build speed and confidence. Review each mock thoroughly, noting weak areas. Often, competition performance hinges on who attempts more correct questions in limited time.  
 - **Stay Updated:** Keep abreast of recent events and tech trends. For Rajasthan GK, follow current affairs (especially state news). For tech, skim news on emerging computer science trends (e.g. a new cybersecurity incident may inspire a question on security practices). This keeps your preparation current.
 
-# 📝 Expected Exam Blueprint (Prediction)
+## 📝 Expected Exam Blueprint (Prediction)
 
 Based on past exams and current syllabus, the approximate blueprint (per 100-Q paper) could be:
 
@@ -103,7 +105,7 @@ Based on past exams and current syllabus, the approximate blueprint (per 100-Q p
 
 **Most Probable Topics:** Based on 2022 data, expect heavy focus on **DBMS & SQL**, **Programming fundamentals**, **MS Office applications**, and **Computer Fundamentals**【44†L169-L177】. These areas collectively make up roughly half the professional paper. Also, **Algorithms (DSA)**, **Network Security**, and **IoT/Web** remain very likely, each contributing ~6–8 questions【44†L169-L177】.
 
-# 📅 Study Plan Suggestion (Apr–Aug 2026)
+## 📅 Study Plan Suggestion (Apr–Aug 2026)
 
 A 5-month plan with regular revisions is key. For example:
 
