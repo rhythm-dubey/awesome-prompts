@@ -41,6 +41,7 @@ Quick reference for the repository layout and current content.
 - `prompts/company/webtechno/saturio-migration-verification.md` - WebTechno migration verification prompt
 - `prompts/company/webtechno/saturio-migration-verification-v2.md` - WebTechno migration verification v2 prompt
 - `prompts/company/webtechno/saturio-email-todo-cron-audit.md` - WebTechno email headers, TODO cleanup, and cron audit prompt
+- `prompts/company/webtechno/webtechno-laravel-readonly-audit-suite.md` - WebTechno Laravel read-only audit prompts (headers, TODOs, legacy fields, CRM refs, bulk_email, cron, email flows, accounting cron)
 - `prompts/company/webtechno/verification-property-valuation.md` - WebTechno valuation verification prompt
 - `prompts/company/webtechno/database-snippets/query-01.sql` - database snippet 1
 - `prompts/company/webtechno/database-snippets/query-02.sql` - database snippet 2
